@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Testing mediaqueries con tailwindcss</title>
+</head>
+
+<body>
+
+  <div class="min-h-screen grid grid-flow-row auto-rows-[minmax(100px,auto)] grid-cols-3 gap-4 m-2">
+
+    <div class="bg-blue-700 text-white text-3xl text-center py-4 rounded-lg col-span-6 grid items-center">
+      header
+    </div>
+    <div class="text-wrap bg-blue-700 text-white lg:text-2xl md:text-2xl sm:text-1xl text-0.2xl text-center py-4 rounded-lg lg:row-span-2 lg:col-span-1 md:row-span-3 sm:row-span-1 overflow-auto grid items-center">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, a.</p>
+      
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dicta similique? Totam eos facere modi corporis pariatur ipsa veritatis fugit.</p>
+    </div>
+    <div class="bg-blue-700 text-white text-3xl text-center rounded-lg lg:col-span-1 lg:row-span-2 md:col-span-5 md:row-span-3 sm:col-span-5 col-span-5 grid items-center">
+      <img class="lg:block md:hidden sm:hidden hidden h-full w-full object-cover" src="/images/imagen5.jpg" alt="">
+      <img class="lg:hidden md:block sm:hidden hidden h-full w-full object-cover" src="/images/imagen4.jpg" alt="">
+      <img class="lg:hidden md:hidden sm:block block h-full w-full object-cover" src="/images/imagen2.jpg" alt="">
+    </div>
+    <div class="bg-blue-700 text-white text-3xl text-center rounded-lg lg:col-span-4 lg:row-span-2 md:hidden lg:grid grid items-center sm:col-span-6 col-span-6">
+      <img class="h-full w-full object-cover hidden lg:block md:hidden" src="./images/imagen1.jpg" alt="">
+      <img class="h-full w-full object-cover sm:block block lg:hidden md:hidden" src="./images/imagen3.jpg" alt="">
+    </div>
+
+  </div>
+
+</body>
+
+</html>
